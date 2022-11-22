@@ -1,4 +1,4 @@
-package com.hngmart_pos.store.hngmart_pos
+package com.hngmart_pos.store
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -62,19 +62,19 @@ class _NavigatorTabState extends State<NavigatorTab> {
           height:  LayoutView(context).isMobile||widget.align==Axis.horizontal?200:null,
           decoration: BoxDecoration(
               color: tab.ic_name==""?Colors.transparent:currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name?Theme.of(context).bottomNavigationBarTheme.selectedItemColor:/*Colors.grey[100]*/Theme.of(context).bottomNavigationBarTheme.unselectedItemColor,
-              border:  widget.style!.borderenabel?Border.all(color: tab.ic_name==""?Colors.transparent:currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name?Colors.green:Colors.white):null
+              border:  widget.style!.borderenabel?Border.all(color: tab.ic_name==""?Colors.transparent:currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name?Color(0xffa41f62):Colors.white):null
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Column(
               children: [
               if(tab.icon is IconData)
-                Icon(tab.icon as IconData,color: !tab.active?Colors.white:(currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name)?Colors.green:Colors.white),
+                Icon(tab.icon as IconData,color: !tab.active?Colors.white:(currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name)?Color(0xffa41f62):Colors.white),
               if(tab.icon is Image)
                 (tab.icon as Image),
                LayoutView(context).isMobile?SizedBox(height: 5,):SizedBox.shrink(),
               if(tab.ic_name!=null)
-                Text(tab.ic_name!,style: TextStyle(color:LayoutView(context).isMobile?Colors.white: !tab.active?(LayoutView(context).isMobile)?Colors.white:Colors.grey:currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name? Colors.green: (LayoutView(context).isMobile)?Colors.white:Colors.grey,
+                Text(tab.ic_name!,style: TextStyle(color:LayoutView(context).isMobile?Colors.white: !tab.active?(LayoutView(context).isMobile)?Colors.white:Colors.grey:currentindex>=0&&widget.tabs[currentindex].ic_name == tab.ic_name? Color(0xffa41f62): (LayoutView(context).isMobile)?Colors.white:Colors.grey,
                     fontSize: (tab.fontSize != null)? tab.fontSize:sl<SharedPreferences>().getString("userType") == "Admin"?10:8),)
             ],),
           ),

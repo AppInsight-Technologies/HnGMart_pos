@@ -65,7 +65,7 @@ class _HeaderState extends State<Header> with Navigations{
     return AppBar(
       elevation: 0,
       automaticallyImplyLeading: false,
-      backgroundColor: /*(LayoutView(context).isMobile)? Color(0xff503C8C):*/Colors.white,
+      backgroundColor: /*(LayoutView(context).isMobile)? Color(0xffa41f62):*/Colors.white,
       actions:  [
       Expanded(
         child: Row(mainAxisSize: MainAxisSize.max,mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
@@ -144,16 +144,16 @@ class _HeaderState extends State<Header> with Navigations{
                           activeTextColor: Colors.white,
                           inactiveTextColor: Colors.grey,
                           borderRadius: 20.0,
-                          switchBorder:Border.all(width: 1,color:  Color(0xff503C8C)),
+                          switchBorder:Border.all(width: 1,color:  Color(0xffa41f62)),
                           inactiveText: S.of(context).OFFLINE,
                           inactiveColor: Colors.white,
-                          activeIcon: state is ShopstatusStateLoading?const CircularProgressIndicator(color: Color(0xff503C8C),): Icon(Icons.power_settings_new_sharp,color:  Color(0xff503C8C),),
+                          activeIcon: state is ShopstatusStateLoading?const CircularProgressIndicator(color: Color(0xffa41f62),): Icon(Icons.power_settings_new_sharp,color:  Color(0xffa41f62),),
                           inactiveIcon: state is ShopstatusStateLoading?const CircularProgressIndicator(color: Colors.white,): Icon(Icons.power_settings_new_sharp),
                           activeToggleColor: Colors.white,
                           activeText: S.of(context).ONLINE,
                           activeTextFontWeight: FontWeight.normal,
                           inactiveToggleColor: Colors.grey,
-                          activeColor:  Color(0xff503C8C),
+                          activeColor:  Color(0xffa41f62),
                           valueFontSize: (LayoutView(context).isWeb || LayoutView(context).isTab)?16.0.sp:14,
                           showOnOff: true,
                           toggleSize: 30.dp,value: _onlinetogle ,

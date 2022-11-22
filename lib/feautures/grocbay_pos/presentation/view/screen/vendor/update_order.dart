@@ -2315,7 +2315,7 @@ class _UpdateOrderScreenState extends State<UpdateOrderScreen> {
                                                       padding: const EdgeInsets.only(top: 8.0),
                                                       child: Text(S.of(context).order +" #"+state1.data.first.id!,
                                                         style: TextStyle(
-                                                            color: Color(0xff503C8C),
+                                                            color: Color(0xffa41f62),
                                                             fontSize: 14,
                                                             fontWeight: FontWeight
                                                                 .bold),),
@@ -2324,7 +2324,7 @@ class _UpdateOrderScreenState extends State<UpdateOrderScreen> {
                                                       padding: const EdgeInsets.only(top: 8.0,left: 15),
                                                       child: Container(
                                                           decoration: BoxDecoration(
-                                                              color: Color(0xff503C8C)
+                                                              color: Color(0xffa41f62)
                                                           ),
                                                           child: Padding(
                                                             padding: const EdgeInsets
