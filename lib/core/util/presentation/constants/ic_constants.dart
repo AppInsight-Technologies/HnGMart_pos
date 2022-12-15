@@ -1,5 +1,5 @@
 class IConstants {
-  static String BaseUrl = "https://sandbox.grocbay.com" /*"https://login.evgrocer.com"*/ /*"https://saas.grocbay.com"*/;
+  static String BaseUrl = "https://login.hngmart.com" /*"https://login.evgrocer.com"*/ /*"https://saas.grocbay.com"*/;
   static String API_IMAGE = "$BaseUrl/uploads/";
   static String API_URI = "$BaseUrl/api/app-manager/get-functionality/";
 
